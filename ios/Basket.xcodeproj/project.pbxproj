@@ -12,8 +12,19 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2956FD6B876C9D139C648981 /* libPods-Basket-BasketTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CBAD22BB97421F860BEC40 /* libPods-Basket-BasketTests.a */; };
+		5EBBDA7965E945B48EB21A1E /* Rasa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3460BF2870A1474C8D8ED8AD /* Rasa-Regular.ttf */; };
+		7491E10780C6465A9320C06F /* Rasa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 237F9FF3D5D546C58D09F3A6 /* Rasa-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		82465A532ABF4A1F011D3401 /* libPods-Basket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD41DC72F548F32026792E /* libPods-Basket.a */; };
+		862C718016F94686891F254A /* Rasa-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A7944C592CE4F259EA10D4A /* Rasa-LightItalic.ttf */; };
+		B15EDC156E0149FABFBC0332 /* Rasa-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91B093CDFDE84C23904C3ECC /* Rasa-BoldItalic.ttf */; };
+		B53B48EC69DF448B95967426 /* Rasa-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E4330DD1CF4632B3CEBDC5 /* Rasa-MediumItalic.ttf */; };
+		C70AC954A11F4A1FBFAB4071 /* Rasa-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E05DF03705FA4FEF946BFE08 /* Rasa-SemiBoldItalic.ttf */; };
+		CED7E23E7A2C40608962E4E6 /* Rasa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A557BF6C12384200B1030AF2 /* Rasa-Medium.ttf */; };
+		D458829C2DB6448A90EBCC8F /* Rasa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C31D6FD6B44B4304BF56BA07 /* Rasa-SemiBold.ttf */; };
+		EB22799C49284AE691BE4FA1 /* Rasa-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2B8109EDE45463D8DAAD163 /* Rasa-Italic.ttf */; };
+		F4D93C0A192641968ED80499 /* Rasa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1CFD80948554A60AE04BE32 /* Rasa-Bold.ttf */; };
+		E9826FFE90F547CAB2284184 /* Ribeye-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2370F16A085493097A94AE6 /* Ribeye-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +47,25 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Basket/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Basket/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Basket/main.m; sourceTree = "<group>"; };
+		237F9FF3D5D546C58D09F3A6 /* Rasa-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-Light.ttf"; path = "../assets/fonts/Rasa-Light.ttf"; sourceTree = "<group>"; };
+		3460BF2870A1474C8D8ED8AD /* Rasa-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-Regular.ttf"; path = "../assets/fonts/Rasa-Regular.ttf"; sourceTree = "<group>"; };
+		4A7944C592CE4F259EA10D4A /* Rasa-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-LightItalic.ttf"; path = "../assets/fonts/Rasa-LightItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Basket/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83BBC8D1ED3349F580883BCB /* Pods-Basket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basket.debug.xcconfig"; path = "Target Support Files/Pods-Basket/Pods-Basket.debug.xcconfig"; sourceTree = "<group>"; };
 		8BDD41DC72F548F32026792E /* libPods-Basket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Basket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B093CDFDE84C23904C3ECC /* Rasa-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-BoldItalic.ttf"; path = "../assets/fonts/Rasa-BoldItalic.ttf"; sourceTree = "<group>"; };
+		96E4330DD1CF4632B3CEBDC5 /* Rasa-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-MediumItalic.ttf"; path = "../assets/fonts/Rasa-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A557BF6C12384200B1030AF2 /* Rasa-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-Medium.ttf"; path = "../assets/fonts/Rasa-Medium.ttf"; sourceTree = "<group>"; };
 		B6CBAD22BB97421F860BEC40 /* libPods-Basket-BasketTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Basket-BasketTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1CFD80948554A60AE04BE32 /* Rasa-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-Bold.ttf"; path = "../assets/fonts/Rasa-Bold.ttf"; sourceTree = "<group>"; };
+		C2B8109EDE45463D8DAAD163 /* Rasa-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-Italic.ttf"; path = "../assets/fonts/Rasa-Italic.ttf"; sourceTree = "<group>"; };
+		C31D6FD6B44B4304BF56BA07 /* Rasa-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-SemiBold.ttf"; path = "../assets/fonts/Rasa-SemiBold.ttf"; sourceTree = "<group>"; };
 		C71EA36F34BBA8D6F62C987E /* Pods-Basket-BasketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basket-BasketTests.debug.xcconfig"; path = "Target Support Files/Pods-Basket-BasketTests/Pods-Basket-BasketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D821CAD00CE21BE8B18665C6 /* Pods-Basket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basket.release.xcconfig"; path = "Target Support Files/Pods-Basket/Pods-Basket.release.xcconfig"; sourceTree = "<group>"; };
+		E05DF03705FA4FEF946BFE08 /* Rasa-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rasa-SemiBoldItalic.ttf"; path = "../assets/fonts/Rasa-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F44712A371AC9C2D301E6B43 /* Pods-Basket-BasketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basket-BasketTests.release.xcconfig"; path = "Target Support Files/Pods-Basket-BasketTests/Pods-Basket-BasketTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2370F16A085493097A94AE6 /* Ribeye-Regular.ttf */ = {isa = PBXFileReference; name = "Ribeye-Regular.ttf"; path = "../assets/fonts/Ribeye-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +128,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4ECAD394AF544929A1544E82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1CFD80948554A60AE04BE32 /* Rasa-Bold.ttf */,
+				91B093CDFDE84C23904C3ECC /* Rasa-BoldItalic.ttf */,
+				C2B8109EDE45463D8DAAD163 /* Rasa-Italic.ttf */,
+				237F9FF3D5D546C58D09F3A6 /* Rasa-Light.ttf */,
+				4A7944C592CE4F259EA10D4A /* Rasa-LightItalic.ttf */,
+				A557BF6C12384200B1030AF2 /* Rasa-Medium.ttf */,
+				96E4330DD1CF4632B3CEBDC5 /* Rasa-MediumItalic.ttf */,
+				3460BF2870A1474C8D8ED8AD /* Rasa-Regular.ttf */,
+				C31D6FD6B44B4304BF56BA07 /* Rasa-SemiBold.ttf */,
+				E05DF03705FA4FEF946BFE08 /* Rasa-SemiBoldItalic.ttf */,
+				D2370F16A085493097A94AE6 /* Ribeye-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +163,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				8C629472F5140A6EE6695EBA /* Pods */,
+				4ECAD394AF544929A1544E82 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -245,6 +287,17 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F4D93C0A192641968ED80499 /* Rasa-Bold.ttf in Resources */,
+				B15EDC156E0149FABFBC0332 /* Rasa-BoldItalic.ttf in Resources */,
+				EB22799C49284AE691BE4FA1 /* Rasa-Italic.ttf in Resources */,
+				7491E10780C6465A9320C06F /* Rasa-Light.ttf in Resources */,
+				862C718016F94686891F254A /* Rasa-LightItalic.ttf in Resources */,
+				CED7E23E7A2C40608962E4E6 /* Rasa-Medium.ttf in Resources */,
+				B53B48EC69DF448B95967426 /* Rasa-MediumItalic.ttf in Resources */,
+				5EBBDA7965E945B48EB21A1E /* Rasa-Regular.ttf in Resources */,
+				D458829C2DB6448A90EBCC8F /* Rasa-SemiBold.ttf in Resources */,
+				C70AC954A11F4A1FBFAB4071 /* Rasa-SemiBoldItalic.ttf in Resources */,
+				E9826FFE90F547CAB2284184 /* Ribeye-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
