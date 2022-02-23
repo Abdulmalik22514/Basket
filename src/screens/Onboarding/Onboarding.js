@@ -5,7 +5,7 @@ import icons from '../../common/icons';
 import {COLORS} from '../../common/theme';
 import {OnboardingStyles as styles} from './styles';
 
-const Onboarding = () => {
+const Onboarding = ({navigation}) => {
   return (
     <>
       <Container backgroundColor={COLORS.background}>
@@ -25,7 +25,11 @@ const Onboarding = () => {
         <Text style={styles.bottomText}>Basket Online Marketplace</Text>
         <View style={styles.bottomButtons}>
           <Text style={styles.skipText}>Skip</Text>
-          <Text style={styles.skipText}>Next</Text>
+          <Text
+            style={styles.skipText}
+            onPress={() => navigation.navigate('Welcome')}>
+            Next
+          </Text>
         </View>
       </Container>
     </>
