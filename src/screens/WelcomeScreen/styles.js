@@ -23,31 +23,6 @@ export const WelcomeStyles = StyleSheet.create({
   productContainer: {
     width: wp(294),
   },
-  topView: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: hp(60),
-    width: wp(171),
-  },
-  logoContainer: {
-    width: wp(44),
-    height: hp(44),
-    backgroundColor: COLORS.orange,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 22,
-    marginRight: wp(12),
-  },
-  trolleyImage: {
-    width: wp(38),
-    height: hp(25),
-  },
-  basketText: {
-    fontFamily: 'Rasa-Bold',
-    fontSize: hp(32),
-    color: COLORS.orange,
-  },
   welcomeText: {
     fontFamily: 'Rasa-Regular',
     color: 'white',
