@@ -4,10 +4,10 @@ import {Arrow} from '../../assets/svgs';
 import {COLORS} from '../common/theme';
 import {hp, wp} from '../common/utils';
 
-const CustomButton = ({label, hasIcon, onPress}) => {
+const CustomButton = ({label, hasIcon, onPress, isDark}) => {
   return (
     <TouchableOpacity
-      style={styles.container}
+      style={[styles.container, isDark && styles.darkBackground]}
       onPress={onPress}
       activeOpacity={0.8}>
       <Text style={styles.label}>{label}</Text>
@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.orange,
     width: wp(289),
     justifyContent: 'center',
+  },
+  darkBackground: {
+    backgroundColor: COLORS.background,
   },
   icon: {
     width: 20,
