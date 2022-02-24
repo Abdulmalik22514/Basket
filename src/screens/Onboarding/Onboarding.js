@@ -24,7 +24,11 @@ const Onboarding = ({navigation}) => {
         </View>
         <Text style={styles.bottomText}>Basket Online Marketplace</Text>
         <View style={styles.bottomButtons}>
-          <Text style={styles.skipText}>Skip</Text>
+          <Text
+            style={styles.skipText}
+            onPress={() => navigation.navigate('Login')}>
+            Skip
+          </Text>
           <Text
             style={styles.skipText}
             onPress={() => navigation.navigate('Welcome')}>
