@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Alert, Text, TouchableOpacity, View} from 'react-native';
 import {KeyIcon, MailIcon, Tick} from '../../../assets/svgs';
 import {Container} from '../../common/container';
 import icons from '../../common/icons';
@@ -8,12 +8,38 @@ import {CustomHeader} from '../../components/CustomHeader';
 import {CustomInput} from '../../components/CustomInput';
 import {SocialButton} from '../../components/SocialButton';
 import {LoginStyles as styles} from './styles';
+import axios from 'axios';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
   const [checked, setChecked] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleCheck = () => {
     return setChecked(!checked);
+  };
+
+  const userDetails = () => {
+    const data = {
+      email,
+      password,
+    };
+    setLoading(true);
+    axios
+      .post(
+        'https://kasppe.com.ng/farmsolhub/wp-json/niishcloud_api/v1/login/',
+        data,
+      )
+      .then(res => {
+        if (res.data.status === 'success') {
+          navigation.navigate('Dashboard');
+        } else {
+          Alert.alert('Error', 'Invalid details');
+        }
+      })
+      .catch(error => console.log(error))
+      .finally(() => setLoading(false));
   };
 
   return (
@@ -30,10 +56,17 @@ const LoginScreen = () => {
               </Text>
             </View>
           </View>
-          <CustomInput placeholder="davidobi@gmail.com" icon={<MailIcon />} />
+          <CustomInput
+            placeholder="davidobi@gmail.com"
+            icon={<MailIcon />}
+            value={email}
+            onChageText={setEmail}
+          />
           <CustomInput
             placeholder="***********"
             icon={<KeyIcon />}
+            value={password}
+            onChageText={setPassword}
             isPassowrd
           />
           <View style={styles.rememberMeBox}>
@@ -46,7 +79,12 @@ const LoginScreen = () => {
             <Text style={styles.rememberText}>Remember me</Text>
           </View>
           <View style={styles.loginContainer}>
-            <CustomButton label="LOGIN" isDark />
+            <CustomButton
+              loading={loading}
+              label="LOGIN"
+              isDark
+              onPress={() => userDetails()}
+            />
             <Text style={styles.forgotPass} onPress={null}>
               Forgot Password
             </Text>
