@@ -9,7 +9,6 @@ export const CustomInput = ({
   placeholder,
   value,
   onChageText,
-  secureTextEntry,
   isPassowrd,
 }) => {
   const [show, setShow] = useState(true);
@@ -22,12 +21,13 @@ export const CustomInput = ({
         placeholder={placeholder}
         value={value}
         onChangeText={onChageText}
-        secureTextEntry={show}
+        secureTextEntry={show && isPassowrd}
       />
       {isPassowrd ? (
         <TouchableOpacity
           style={styles.eyeStyle}
-          onPress={() => setShow(!show)}>
+          onPress={() => setShow(!show)}
+          activeOpacity={0.8}>
           <Eye_Off />
         </TouchableOpacity>
       ) : null}

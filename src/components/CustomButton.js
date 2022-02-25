@@ -1,16 +1,29 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  ActivityIndicator,
+} from 'react-native';
 import {Arrow} from '../../assets/svgs';
 import {COLORS} from '../common/theme';
 import {hp, wp} from '../common/utils';
 
-const CustomButton = ({label, hasIcon, onPress, isDark}) => {
+const CustomButton = ({label, hasIcon, onPress, isDark, loading}) => {
   return (
     <TouchableOpacity
       style={[styles.container, isDark && styles.darkBackground]}
       onPress={onPress}
       activeOpacity={0.8}>
-      <Text style={styles.label}>{label}</Text>
+      {loading ? (
+        <ActivityIndicator
+          color="white"
+          size="small"
+          style={{alignSelf: 'center'}}
+        />
+      ) : (
+        <Text style={styles.label}>{label}</Text>
+      )}
       {hasIcon ? <Arrow /> : null}
     </TouchableOpacity>
   );
